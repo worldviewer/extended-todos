@@ -7,7 +7,7 @@ Build a todo list with Rails. You are going to need:
 - Routes to `todos#index` and `todos#create`
 - A view in app/views/todos called index.html.erb, rendered by the `TodosController`, that renders a list of all todos and a form underneath to add a new todo
 
-## Add Assosciations to Todo's
+## Add Associations to Todo's
 What you're going going to need:
 
 - An `Author` model with attributes `name` and `age`
