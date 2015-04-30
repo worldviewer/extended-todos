@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :authors
   root to: 'authors#index'
 
   get '/authors', to: 'authors#index'
