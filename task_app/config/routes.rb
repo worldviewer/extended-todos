@@ -6,6 +6,5 @@ Rails.application.routes.draw do
   get '/authors/:id', to: 'authors#show'
   get '/authors/:id/todos', to: 'todos#index'
 
-  post '/authors', to: 'authors#create'
   post '/authors/:id/todos', to: 'todos#create'
 end
