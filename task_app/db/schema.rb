@@ -13,21 +13,21 @@
 
 ActiveRecord::Schema.define(version: 20150428142338) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+    # These are extensions that must be enabled in order to support this database
+    enable_extension "plpgsql"
 
-  create_table "authors", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+    create_table "authors", force: :cascade do |t|
+        t.string   "name"
+        t.datetime "created_at", null: false
+        t.datetime "updated_at", null: false
+    end
 
-  create_table "todos", force: :cascade do |t|
-    t.string   "description"
-    t.boolean  "completed"
-    t.integer  "author_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
+    create_table "todos", force: :cascade do |t|
+        t.string   "description"
+        t.boolean  "completed"
+        t.integer  "author_id"
+        t.datetime "created_at",  null: false
+        t.datetime "updated_at",  null: false
+    end
 
 end
