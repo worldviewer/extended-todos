@@ -1,4 +1,6 @@
 class TodosController < ApplicationController
+	before_action :authenticate_author!, except: [:index]
+
 	def index
 		@author = Author.find(params[:id])
 		@todos = @author.todos
